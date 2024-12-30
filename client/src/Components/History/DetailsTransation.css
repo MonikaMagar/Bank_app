@@ -1,0 +1,19 @@
+/* DetailTransaction.css */
+.transaction-detail-container {
+    margin-top: 20px;
+  }
+  
+  .transaction-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loading-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .loading-text {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  

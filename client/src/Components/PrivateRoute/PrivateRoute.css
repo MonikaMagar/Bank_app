@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    background-color: #f4f7fa; /* Light background color */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .private-route-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-area {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    
+  }
+  
+  .sidebar-layout {
+    display: flex;
+    width: 100%;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .sidebar-col {
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar-col:hover {
+    transform: translateX(-10px); /* Sidebar hover effect */
+  }
+  
+  .main-content-col {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    flex-grow: 1;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .main-content-col:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .main-content {
+    animation: fadeIn 1s ease-out; /* Fade-in effect for the content */
+  }
+  
+  .breadcrumb {
+    background: transparent;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .breadcrumb-item {
+    color: #6a4c9c;
+  }
+  
+  .breadcrumb-item.active {
+    color: #9b59b6;
+    font-weight: bold;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 1024px) {
+    .sidebar-col {
+      position: absolute;
+      left: -250px; /* Sidebar hidden off-screen on tablets */
+      width: 250px;
+      transition: left 0.3s ease;
+    }
+  
+    .sidebar-col.open {
+      left: 0; /* Sidebar becomes visible when opened */
+    }
+  
+    .main-content-col {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .private-route-layout {
+      flex-direction: column;
+    }
+  
+    .sidebar-col {
+      position: absolute;
+      left: -250px; /* Sidebar hidden off-screen */
+      width: 250px;
+      z-index: 9999;
+    }
+  
+    .sidebar-col.open {
+      left: 0; /* Sidebar appears */
+    }
+  
+    .main-content-col {
+      padding: 10px;
+    }
+  
+    .breadcrumb {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .content-area {
+      padding: 10px;
+    }
+  
+    .sidebar-col {
+      width: 200px; /* Adjust sidebar width on mobile */
+    }
+  
+    .main-content-col {
+      padding: 8px;
+    }
+  
+    .breadcrumb {
+      font-size: 0.8rem;
+    }
+  }

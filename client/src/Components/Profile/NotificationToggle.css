@@ -1,0 +1,66 @@
+/* Main Container */
+.notification-toggle-container {
+    background-color: #fff; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  /* Title for Notification Settings */
+  .notification-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f78c2c; /* Orange color for the title */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the Form Check (Switch) */
+  .notification-switch {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333; /* Dark gray for text */
+  }
+  
+  .notification-switch .form-check-label {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Switch Label: ON / OFF */
+  .notification-switch .form-check-input:checked {
+    background-color: #f78c2c; /* Orange color when checked */
+    border-color: #f78c2c; /* Orange border */
+  }
+  
+  .notification-switch .form-check-input:focus {
+    border-color: #f78c2c; /* Orange focus border */
+  }
+  
+  /* Switch Off State */
+  .notification-switch .form-check-input:disabled {
+    background-color: #ccc; /* Light gray when disabled */
+    border-color: #ccc;
+  }
+  
+  /* Message Text (Success/Failure Message) */
+  .notification-message {
+    font-size: 14px;
+    color: #f78c2c; /* Orange color for the message */
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .notification-toggle-container {
+      padding: 15px;
+    }
+  
+    .notification-title {
+      font-size: 20px;
+    }
+  }
+  

@@ -1,0 +1,48 @@
+/* Main navbar container */
+.mobile-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff; /* White background */
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  /* Navbar links */
+  .mobile-navbar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #ff7f00; /* Orange color for the icon */
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Active state styling */
+  .mobile-navbar-link.active {
+    color: #ff4500; /* Darker shade of orange for active link */
+  }
+  
+  .mobile-navbar-link:hover {
+    color: #ff4500; /* Dark orange color on hover */
+  }
+  
+  /* Navbar icon styling */
+  .navbar-icon {
+    font-size: 30px; /* Adjust the icon size */
+  }
+  
+  /* Optional: add a subtle background color on hover */
+  .mobile-navbar-link:hover {
+    background-color: #f0f0f0; /* Light background when hovered */
+    border-radius: 50%;
+  }
+  
+  /* Adjust the overall navbar icon color to white when active */
+  .mobile-navbar-link.active .navbar-icon {
+    color: white;
+  }
+  
+  

@@ -1,0 +1,105 @@
+/* Navigation.css */
+
+/* Basic Navbar Styling */
+nav {
+    background-color: #ffffff; /* White background */
+    color: #f78c2c; /* Orange text for the navbar */
+    border-bottom: 2px solid #f78c2c; /* Thin orange border at the bottom */
+    box-shadow: none; /* Removed box-shadow for a flatter look */
+  }
+  
+  /* Navbar Container */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navbar Links */
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* User Name Styling */
+  .navbar-user {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f78c2c;
+    padding-right: 15px;
+    margin-right: 20px;
+    border-right: 2px solid #f78c2c; /* Light border to separate user info */
+  }
+  
+  /* Profile Circle Styling */
+  #profile {
+    width: 40px;
+    height: 40px;
+    background-color: #f78c2c; /* Orange background */
+    color: white; /* White text for first letter */
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  }
+  
+  /* Profile Hover Effect */
+  #profile:hover {
+    background-color: #e07a29; /* Darker orange shade on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  /* Notification Box Styling */
+  .notification-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Notification Icon Styling */
+  .notification-box .notification-icon {
+    color: #f78c2c; /* Orange icon */
+    cursor: pointer;
+    margin-left: 20px;
+    transition: color 0.3s ease; /* Smooth color change */
+  }
+  
+  /* Notification Icon Hover */
+  .notification-box .notification-icon:hover {
+    color: #e07a29; /* Darker orange shade on hover */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      padding: 10px 20px;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .navbar-user {
+      margin-bottom: 10px;
+      padding-right: 0;
+      border-right: none; /* Remove border on small screens */
+    }
+  
+    #profile {
+      margin-left: 0;
+    }
+  }
+  

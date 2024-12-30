@@ -1,0 +1,75 @@
+/* Container Styling */
+.send-money-container {
+    max-width: 450px; /* Set a fixed max width */
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation for the container */
+  }
+  
+  /* Form Fields Styling */
+  .send-money-form .form-control,
+  .send-money-form .form-select {
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  /* Button Styling */
+  .submit-button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for button */
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Alert Animations */
+  .alert-fade-in {
+    opacity: 0;
+    animation: fadeInAlert 0.5s forwards;
+  }
+  
+  /* Fade-in Effect for Form Container */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-in Effect for Alerts */
+  @keyframes fadeInAlert {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Text Styling */
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive Styling for Smaller Screens */
+  @media (max-width: 576px) {
+    .send-money-container {
+      max-width: 90%; /* Full width on small screens */
+    }
+  }
+  

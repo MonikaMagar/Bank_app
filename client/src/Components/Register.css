@@ -1,0 +1,133 @@
+/* Ensure full height of the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Register Page Background */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(255, 255, 255); /* Light background color */
+  margin: 0;
+}
+
+/* Register Card Styling */
+.register-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 16px rgba(255, 153, 1, 0.3); /* Soft shadow with orange tint */
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Heading Styling */
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Form Input Fields Styling */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button Styling */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: darkorange;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Full-Screen Background Image for VerifyOTP Page */
+.verify-otp-background {
+  background-color: rgb(255, 255, 255); /* White background for VerifyOTP */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: fadeIn 2s ease-out; /* Animation for fade-in */
+}
+
+/* Form Container Styling for VerifyOTP */
+.verify-otp-form {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px; /* Form max width */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Heading Styling for VerifyOTP */
+.verify-otp-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .register-page, .verify-otp-background {
+    padding: 0;
+  }
+
+  .register-card, .verify-otp-form {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  form input, form button {
+    font-size: 14px;
+  }
+}
+
+/* Animation for Fade-In */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

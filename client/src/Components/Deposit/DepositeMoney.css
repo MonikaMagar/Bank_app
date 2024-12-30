@@ -1,0 +1,65 @@
+/* Container Styling */
+.deposit-money-container {
+    max-width: 400px; /* Fixed size for form */
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation for the form */
+  }
+  
+  /* Form Fields Styling */
+  .deposit-form .form-control {
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .submit-button {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Alert Animations */
+  .alert-fade-in {
+    opacity: 0;
+    animation: fadeInAlert 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInAlert {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Additional Styling for Text */
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Small screens responsiveness */
+  @media (max-width: 576px) {
+    .deposit-money-container {
+      max-width: 90%; /* Full width on small screens */
+    }
+  }
+  

@@ -1,0 +1,179 @@
+/* Main Notification Container */
+.MainNotification {
+    position: relative;
+    display: inline-block;
+}
+
+/* Notification Icon */
+.notification_icon {
+    cursor: pointer;
+    background-color: #f78c2c; /* Orange background for the notification icon */
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.notification_icon:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+/* Notification Box */
+.Notification {
+    position: fixed; /* Changed from absolute to fixed */
+    top: 40px; /* Adjust based on the position of the icon */
+    right: 15px; /* Ensures the box is not right against the edge */
+    background-color: #fff; /* White background for the notification box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px; /* Default width for desktop */
+    padding: 20px;
+    z-index: 100; /* Ensures the notification box is on top of other elements */
+}
+
+/* Notification Box Header */
+#Notification-Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f78c2c; /* Orange border at the bottom of the header */
+}
+
+#Notification-Head h5 {
+    font-size: 18px;
+    color: #f78c2c; /* Orange color for the header */
+    margin: 0;
+}
+
+.mb-2 {
+    margin-bottom: 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.py-2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Close Button (RxCross2) */
+#Notification-Head .mb-2 {
+    cursor: pointer;
+}
+
+#Notification-Head .mb-2:hover {
+    color: #f78c2c;
+}
+
+/* Notification Body */
+#Notification-body {
+    margin-top: 10px;
+}
+
+/* Individual Notification Messages */
+#Notification-body div {
+    background-color: #f9f9f9; /* Light gray background for individual notifications */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#Notification-body p {
+    color: #333;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Error Message Style */
+#error-message {
+    color: #f78c2c; /* Orange color for error message */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Empty Notification State */
+#Notification-body p {
+    font-size: 14px;
+    color: #aaa; /* Light gray text for "No notifications" state */
+}
+
+/* Responsive Design */
+
+/* For larger tablets or small desktop screens */
+@media (max-width: 1024px) {
+    .Notification {
+        width: 270px; /* Adjust width for tablets */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .notification_icon {
+        padding: 8px; /* Adjust icon padding */
+    }
+
+    #Notification-Head h5 {
+        font-size: 16px; /* Adjust font size for smaller devices */
+    }
+
+    #Notification-body div {
+        padding: 8px; /* Less padding for individual notifications */
+    }
+}
+
+/* For tablets and smaller screens (768px) */
+@media (max-width: 768px) {
+    .Notification {
+        width: 240px; /* Slightly narrower box */
+        padding: 12px; /* Reduced padding */
+    }
+
+    .notification_icon {
+        padding: 8px; /* Smaller icon size */
+    }
+
+    #Notification-Head h5 {
+        font-size: 14px; /* Smaller header font */
+    }
+
+    #Notification-body div {
+        padding: 8px; /* Smaller padding for notification messages */
+    }
+}
+
+/* For mobile phones (480px and below) */
+@media (max-width: 480px) {
+    /* Position the notification icon to the right */
+    .notification_icon {
+        position: fixed;
+        top: 15px; /* Adjust top position */
+        right: 15px; /* Adjust right position */
+        padding: 6px; /* Smaller icon size */
+        z-index: 101; /* Ensure the icon stays above other content */
+    }
+
+    /* Notification box adjustments for mobile */
+    .Notification {
+        position: fixed; /* Keep it fixed for visibility */
+        top: 70px; /* Position the box below the icon */
+        right: 15px; /* Ensure it stays aligned with the icon */
+        width: 90%; /* Use most of the screen width, but leave margins */
+        max-width: 300px; /* Max width for readability */
+        padding: 12px; /* Reduce padding */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    }
+
+    #Notification-Head h5 {
+        font-size: 14px; /* Further reduced header font size */
+    }
+
+    #Notification-body div {
+        padding: 6px; /* Smaller padding for individual notifications */
+    }
+
+    #Notification-body p {
+        font-size: 12px; /* Smaller font size for text on mobile */
+    }
+}

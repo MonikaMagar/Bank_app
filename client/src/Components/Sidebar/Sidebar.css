@@ -1,0 +1,119 @@
+/* General Sidebar Styling */
+.sidebar {
+  background-color: #ffffff; /* White background */
+  color: #ff7f00; /* Orange text color */
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100vh;
+  width: 250px; /* Default width for desktop */
+}
+
+
+
+.sidebar-title {
+  color: #ff7f00; /* Orange for the title */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sidebar hr {
+  border-color: rgba(255, 127, 0, 0.2); /* Light orange for the border */
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #ff7f00; /* Orange text */
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: block;
+}
+
+.sidebar-link:hover {
+  background-color: #ff7f00; /* Orange background on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+.sidebar-link.active {
+  background-color: #ff5722; /* A darker shade of orange for active links */
+  color: #ffffff; /* White text for active links */
+}
+
+.sidebar-link li {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-mobile {
+  padding: 15px;
+  border-radius: 0;
+  width: 100%; /* Full width on mobile */
+}
+
+.sidebar-desktop {
+  width: 250px; /* Desktop size */
+}
+
+/* Media Queries */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Slightly smaller sidebar for tablets */
+  }
+
+  .sidebar-title {
+    font-size: 1.2rem; /* Slightly smaller title font for smaller screens */
+  }
+
+  .sidebar-link {
+    padding: 8px 12px; /* Adjust padding for smaller devices */
+  }
+
+  /* On mobile, hide the text and show only icons */
+  .sidebar-link span {
+    display: none; /* Hide the text */
+  }
+
+  .sidebar-link li {
+    justify-content: center; /* Center align icons in the sidebar */
+  }
+
+  .sidebar-link:hover li {
+    justify-content: center; /* Keep icons centered on hover */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%; /* Full width sidebar on mobile */
+    padding: 10px;
+  }
+
+  .sidebar-title {
+    font-size: 1rem; /* Smaller title font for mobile */
+  }
+
+  .sidebar-link {
+    padding: 10px; /* Adjust padding for mobile */
+    font-size: 0.9rem; /* Smaller font size for mobile links */
+  }
+
+  /* Hide text and only show icons on mobile */
+  .sidebar-link span {
+    display: none; /* Hide the text */
+  }
+
+  .sidebar-desktop {
+    width: 100%; /* Full width sidebar on mobile */
+  }
+
+  .sidebar-link li {
+    justify-content: center; /* Center the icons */
+  }
+
+  .sidebar-link:hover li {
+    justify-content: center; /* Keep icons centered on hover */
+  }
+}

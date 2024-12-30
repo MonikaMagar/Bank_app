@@ -1,0 +1,70 @@
+/* Ensure full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Full-screen background image for VerifyOTP page */
+  .verify-otp-background {
+   background-color: rgb(255, 255, 255);
+    background-size: cover; /* Ensures the background image covers the entire page */
+    height: 100vh; /* Ensures full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: fadeIn 2s ease-out; /* Animation for background fade-in */
+  }
+  
+  /* Form container styling */
+  .verify-otp-form {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px; /* Ensure the form has a max width */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Heading styling */
+  .verify-otp-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Animation for fade-in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .verify-otp-background {
+      background-size: cover;
+      padding: 0;
+    }
+  }
+
+  
+
+
+
+
+  .footer {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  

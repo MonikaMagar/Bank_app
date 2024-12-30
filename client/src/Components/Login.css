@@ -1,0 +1,154 @@
+/* Full-Screen Background Styling */
+.login-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f7f7f7; /* Light gray background */
+    margin: 0;
+    position: relative; /* Ensures content is centered correctly */
+}
+
+/* Login Form Container Styling */
+.login-form {
+    background-color: #ffffff; /* White background */
+    color: #ff7f50;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease; /* Smooth fade-in animation */
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Form Input Fields Styling */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+form button {
+    width: 50%;
+    padding: 12px;
+    background-color: orangered; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Makes the button a block-level element */
+    margin: 0 auto; /* Centers the button horizontally */
+}
+
+form button:hover {
+    background-color: orange; /* Darker blue for hover state */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+form input:focus,
+form button:focus {
+    outline: none;
+    border-color: #ff7f50; /* Orange border on focus */
+    box-shadow: 0 0 5px rgba(255, 127, 80, 0.6); /* Light orange glow */
+}
+
+/* Alert Styling */
+.alert {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .login-form {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    form input,
+    form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .login-background {
+        padding: 5px; /* Slightly reduced padding */
+    }
+
+    .login-form {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    form input,
+    form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 15px 0; /* Increased padding for mobile */
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #f7f7f7; /* Light gray background for the footer */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333; /* Darker footer text for better contrast */
+    position: fixed; /* Always stay at the bottom */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Slight shadow above footer */
+}
+
+/* Ensure footer text is responsive */
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px; /* Smaller font size for smaller screens */
+    }
+}
